@@ -79,6 +79,7 @@ color: hsl(71, 73%, 54%);
     border-radius: 10px;
     color: white;
     cursor: pointer;
+    background-color: hsl(71, 73%, 54%);
 }
 
 
