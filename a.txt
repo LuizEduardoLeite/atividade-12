@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page1.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+        </style>
+</head>
+<body>
+    <div class="mainf">
+        <div class="grid">
+            <div class="a1">
+                <h2>Join our community</h2>
+                <h3>30-days,hassle-free money back guarantee</h3>
+                <p>Gain access to our full library of tutorials along with expert code reviews.</p>
+                <p>Perfect for any developers who are serious about horning their skills</p>
+            </div>
+           <div class="a2">
+           
+                <h2>Monthly Subscription</h2>
+                <h3><strong>$29</strong> <small>per month</small></h3>
+                <p>Full acess for less than $1 a day</p>
+                <button type="submit">Sign UP</button>
+            </div>
+            <div class="a3">
+                <h2>Why Us</h2>
+                <p>Tutorials by industry experts Peer & expert code review coding exercises. Acess to our GitHub repos Community forum. flash decks new videos every week</p>
+                
+            </div>
+            
+
+        </div>
+     
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+body{
+    margin: 0px;
+    padding:0;
+    box-sizing: border-box;
+}
+
+    
+
+.mainf{
+    display: flex;
+    min-width: 375px;
+    min-height: 667px;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(218, 22%, 67%);
+}
+.grid{
+    display: grid;
+    width: 600px;
+    height: 350px;
+    grid-template-rows: 1fr 200px ;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: 
+    'top top'
+    'esq dir';
+}
+
+.a1{
+    
+    background-color: white;
+    grid-area: top;
+    border-radius: 15px 15px 0px 0px;
+    font-size: 13px;
+    color: hsl(202, 24%, 80%);
+    text-align: start;
+    padding-left: 30px;
+    letter-spacing: 1px ;
+    font-family: 'karla'sans-serif;
+    
+    
+    
+}
+.a1 p{
+    line-height: 5px;
+}
+.a1 h2{
+    color:blue;
+}
+.a1 h3{
+color: hsl(71, 73%, 54%);
+}
+
+
+.a2{
+    
+    background-color: hsl(179, 71%, 34%);
+    grid-area: esq;
+    border-radius: 0px 0px 0px 15px;
+    font-size: 13px;
+    color:white;
+    padding-left: 30px;
+    word-spacing: 8px;
+    font-family: 'karla'sans-serif;
+    
+
+}
+.a2 button{
+    width: 240px;
+    height: 40px;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 10px;
+    padding-left: 30px;
+    color: white;
+    
+    
+
+}
+
+small{
+    color: rgb(49, 94, 94);
+    font-size: 10px;
+}
+.a3{
+    
+    background-color: hsl(179, 62%, 43%);
+    grid-area: dir;
+    border-radius: 0px 0px 15px 0px;
+    text-align: start;
+    font-size: 13px;
+    color:white;
+    padding-left: 30px;
+    padding-right: 50px;
+    font-family: 'karla'sans-serif;
+    
+}
+.a3 p{
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+
+
